@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   background: goldenrod;
+  gap: 20px;
   /*  */
 }
 input,
@@ -28,5 +29,25 @@ button {
 }
 button {
   /* border: 1px solid black; */
+  border-radius: 10px;
+}
+.signin,
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid black; */
+}
+.nav {
+}
+.nav a {
+  padding: 10px;
+  background-color: rgb(18, 135, 156);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
   border-radius: 10px;
 }

@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="ex.css" />
   </head>
   <body>
-    <h1>signUP</h1>
-    <input type="text" placeholder="enter text" id="sign-id" />
-    <input type="password" placeholder="enter text" id="sign-pass" />
-    <button id="sign-btn">Sign Up</button>
-    <h1>Login</h1>
-    <input type="text" placeholder="Enter ID" id="login-id" />
-    <input type="password" placeholder="enter text" id="login-pass" />
-
-    <button id="login-btn">Login Up</button>
-    <p id="login-failed">Login Failed</p>
-    <p id="login-success">Login Successfull</p>
+    <div class="nav">
+      <a href="#" id="login">LOGIN</a>
+      <a href="#" id="sign">SIGNUP</a>
+    </div>
+    <div class="container">
+      <div class="signin">
+        <h1>Sign UP</h1>
+        <input type="text" placeholder="enter text" id="sign-id" />
+        <input type="password" placeholder="enter text" id="sign-pass" />
+        <button id="sign-btn">Sign Up</button>
+      </div>
+      <div class="login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Enter ID" id="login-id" />
+        <input type="password" placeholder="enter text" id="login-pass" />
+        <button id="login-btn">Login Up</button>
+      </div>
+    </div>
+    <p id="login-failed" style="display: none">Login Failed</p>
+    <p id="login-success" style="display: none">Login Successfull</p>
     <script src="ex.js"></script>
   </body>
 </html>
