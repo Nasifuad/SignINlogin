@@ -6,7 +6,17 @@ const loginid = document.getElementById("login-id");
 const loginpass = document.getElementById("login-pass");
 const loginfailed = document.getElementById("login-failed");
 const loginsuccess = document.getElementById("login-success");
+const login = document.getElementById("login");
+const sign = document.getElementById("sign");
 
+login.addEventListener("click", () => {
+  document.getElementById("ss").style.display = "flex";
+  document.getElementById("s").style.display = "none";
+});
+sign.addEventListener("click", () => {
+  document.getElementById("s").style.display = "flex";
+  document.getElementById("ss").style.display = "none";
+});
 class UserArray {
   constructor() {
     this.length = 0;
