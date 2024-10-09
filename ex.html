@@ -18,43 +18,15 @@
         <button class="btn" id="btn"><i class="fa fa fa-search"></i></button>
       </div>
       <div class="user">
-        <div class="login"><i class="fa fa-user"></i> Login</div>
-        <div class="signup"><i class="fa-solid fa-user-plus"></i> Signup</div>
+        <div class="login" id="login"><i class="fa fa-user"></i> Login</div>
+        <div class="signup" id="signup">
+          <i class="fa-solid fa-user-plus"></i> Signup
+        </div>
       </div>
-      <div class="admin"><i class="fa fa-user"></i>Admin Login</div>
+      <div class="admin" id="admin"><i class="fa fa-user"></i>Admin Login</div>
     </section>
     <!-- Appending Child here -->
-    <section id="pop-up">
-      <div class="content-popup">
-        <!-- Name of the heding would be decided by which button user clicks eg: login, admin, signup -->
-        <p id="welcome">Welcome to Login Page</p>
-        <div class="name">
-          <input
-            type="text"
-            id="username"
-            class="username"
-            placeholder="Enter your ID name"
-            autocomplete="off"
-          />
-          <i class="fa fa-user btn-user"></i>
-          <p id="error-username">Username not valid</p>
-        </div>
-        <div class="pass">
-          <input
-            type="password"
-            id="password"
-            class="password"
-            placeholder="Enter your password"
-          />
-          <i class="fa fa-eye btn-password"></i>
-          <p id="error-password">Password Incorrect</p>
-        </div>
-        <button id="submit">
-          Submit <i class="fa fa-paper-plane btn-submit"></i>
-        </button>
-        <div id="cross"><i class="fa fa-times cross"></i></div>
-      </div>
-    </section>
+    <section id="pop-up"></section>
     <script src="ex.js"></script>
   </body>
 </html>

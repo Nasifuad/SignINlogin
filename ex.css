@@ -150,8 +150,8 @@ h1 {
   flex-direction: column;
   gap: 0.5rem;
 }
-#error-password,
-#error-username {
+.error-password,
+.error-username {
   color: #5a0000;
   /* font-weight: 900; */
   font-size: 1rem;
