@@ -23,7 +23,34 @@
       </div>
       <div class="admin"><i class="fa fa-user"></i>Admin Login</div>
     </section>
-
+    <section id="pop-up">
+      <div class="content-popup">
+        <p id="welcome">Welcome to Login Page</p>
+        <div class="username">
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your ID name"
+            autocomplete="off"
+          />
+          <i class="fa fa-user btn-user"></i>
+          <p id="error-username">Username not valid</p>
+        </div>
+        <div class="password">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <i class="fa fa-eye btn-password"></i>
+          <p id="error-password">Password Incorrect</p>
+        </div>
+        <button id="submit">
+          Submit <i class="fa fa-paper-plane btn-submit"></i>
+        </button>
+        <div id="cross"><i class="fa fa-times cross"></i></div>
+      </div>
+    </section>
     <script src="ex.js"></script>
   </body>
 </html>

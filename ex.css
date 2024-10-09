@@ -28,6 +28,7 @@ body {
   align-items: first baseline;
   padding: 1rem;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 h1 {
   color: rgb(99, 0, 191);
@@ -40,15 +41,18 @@ h1 {
 .search {
   position: relative;
 }
-#search {
+#search,
+#username,
+#password {
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   /* font-size: 1.3rem; */
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 3px;
+  width: 18rem;
   /* font-style: italic; */
 }
 
@@ -75,18 +79,89 @@ h1 {
   /* background-color: #5604f9cc; */
 }
 .login,
-.signup {
+.signup,
+.admin {
+  display: flex;
   background-color: #5604f994;
   padding: 0.5rem;
   color: #0000008b;
   font-weight: 500;
   border-radius: 10px;
   font-size: 1.3rem;
+  gap: 0.5rem;
 }
 .login:hover,
-.signup:hover {
+.signup:hover,
+.admin:hover {
   background-color: #5604f9;
   padding: 0.5rem;
   border-radius: 10px;
   color: black;
+}
+.username,
+.password {
+  position: relative;
+  width: max-content;
+}
+.btn-user,
+.btn-password {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0.7rem;
+  color: rgba(0, 0, 0, 0.572);
+}
+.content-popup {
+  width: 400px;
+  background-color: #0b487a4f;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+#welcome {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #073b00cc;
+}
+#submit {
+  width: 50%;
+  text-align: center;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #ffffff8b;
+  background-color: #0000008b;
+  border: none;
+}
+.username,
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#error-password,
+#error-username {
+  color: #5a0000;
+  /* font-weight: 900; */
+  font-size: 1rem;
+  display: none;
+  /* text-align: center; */
+}
+.cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.531);
 }
