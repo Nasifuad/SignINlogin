@@ -42,7 +42,7 @@ function showPopup(name) {
     pop_up.style.display = "none";
     new_login.remove(); // Remove the popup from DOM
   });
-
+  //call the error
   const submit = document.getElementById("submit");
   const error_username = document.getElementById(`error-username${name}`);
   const error_password = document.getElementById(`error-password${name}`);
